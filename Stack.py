@@ -1,11 +1,13 @@
+from typing import Any
+
 class Stack:
     def __init__(self, stack_list: list):
         self.stack_list = stack_list
 
-    def is_empty(self):
+    def is_empty(self) -> bool:
         return not self.stack_list
 
-    def push(self, new_element: any):
+    def push(self, new_element: Any):
         self.stack_list.append(new_element)
 
     def pop(self):
